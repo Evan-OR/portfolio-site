@@ -90,9 +90,9 @@ $dark_font: #272727;
     max-width: 1400px;
     display: flex;
     justify-content: space-around;
-    margin: 35px 0;
-    box-shadow: 0 30px 30px #00000017;
-    border-radius: 10px;
+    margin: 100px 0;
+    // box-shadow: 0 0 50px #00000017;
+    // border-radius: 10px;
 
     .project-text {
       display: flex;
@@ -133,7 +133,7 @@ $dark_font: #272727;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
-        // filter: drop-shadow(0 0 20px rgb(255, 255, 255));
+        filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.226));
 
         div {
           img {
@@ -158,6 +158,10 @@ $dark_font: #272727;
           display: flex;
           justify-content: center;
           align-items: center;
+
+          a {
+            text-decoration: none;
+          }
 
           .live {
             @include buttonMix(white, $dark_font, "false");
@@ -203,7 +207,10 @@ $dark_font: #272727;
     }
   }
 }
-
+.typescript {
+  margin-top: 8px;
+  border-radius: 3px;
+}
 .project-wrapper:last-child {
   margin-bottom: 80px;
 }

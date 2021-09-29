@@ -58,6 +58,7 @@ function About() {
               </div>
               <div title="Typescript">
                 <img
+                  className="typescript"
                   alt="typescript"
                   draggable="false"
                   width="30px"

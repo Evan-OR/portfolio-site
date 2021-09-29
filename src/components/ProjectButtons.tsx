@@ -1,20 +1,33 @@
-import React from 'react';
+import React from "react";
 
-function ProjectButtons() {
-  const weatherAppRequest = () => {
-    console.log('REQUESTING');
-  };
+type ButtonProps = {
+  githubLink?: string;
+  projectLink?: string;
+  onlyDisplayCode?: boolean;
+};
+
+function ProjectButtons(props: ButtonProps) {
+  const { githubLink, projectLink, onlyDisplayCode } = props;
+  // const weatherAppRequest = () => {
+  //   console.log("REQUESTING");
+  // };
 
   return (
     <div className="buttons-wrapper">
-      <div className="button">
-        <div className="button-text live" onClick={() => weatherAppRequest()}>
-          VIEW PROJECT
+      {onlyDisplayCode ? (
+        <></>
+      ) : (
+        <div className="button">
+          <a href={projectLink} target="_blank" rel="noreferrer">
+            <div className="button-text live">LIVE PROJECT</div>
+          </a>
         </div>
-      </div>
+      )}
 
       <div className="button">
-        <div className="button-text code">VIEW CODE &lt;/&gt;</div>
+        <a href={githubLink} target="_blank" rel="noreferrer">
+          <div className="button-text code">VIEW CODE &lt;/&gt;</div>
+        </a>
       </div>
     </div>
   );
