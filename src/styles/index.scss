@@ -1,0 +1,242 @@
+$rose-red: #c03f5f;
+$blue: #2e86ab;
+$carrot-orange: #f18f01;
+$dark_font: #272727;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.nav-wrapper {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  z-index: 100;
+  width: 100%;
+  color: white;
+
+  .nav-option {
+    font-size: 1em;
+    font-weight: 400;
+    user-select: none;
+    margin: 1.2rem 1.2rem;
+    padding: 10px;
+    transition-property: all;
+    transition-duration: 0.3s;
+
+    &:hover {
+      transform: scale(1.04);
+    }
+
+    .nav-link {
+      color: white;
+      text-decoration: none;
+      padding: 10px;
+    }
+  }
+}
+
+.hero-wrapper {
+  width: 100%;
+  background: $blue;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+
+  .hero {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .hero-title {
+      font-family: "Permanent Marker", cursive;
+      font-size: 6em;
+      animation: titleAnimation 1.5s ease-out 0s 1 alternate;
+    }
+    .hero-subtitle {
+      font-size: 3em;
+      animation: subTitleAnimation 1.5s ease-out 0s 1 alternate;
+    }
+  }
+
+  .shape-divider {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+
+    svg {
+      position: relative;
+      display: block;
+      width: calc(100% + 1.3px);
+      height: 84px;
+    }
+    .shape-fill {
+      fill: #ffffff;
+    }
+  }
+}
+
+.about-wrapper {
+  margin-top: 80px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .about-section {
+    font-size: 20px;
+    color: $dark_font;
+    max-width: 1000px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    box-shadow: 0 30px 30px #00000017;
+    border-radius: 10px;
+    padding: 20px 0;
+
+    .about-section-title {
+      flex: 1;
+      align-self: center;
+      font-weight: bold;
+      text-align: center;
+      font-size: 3rem;
+
+      .about-highlight {
+        color: $blue;
+      }
+    }
+
+    .about-section-content {
+      flex: 1;
+
+      .skills-wrapper {
+        display: flex;
+        flex-direction: column;
+        font-size: 32px;
+
+        .skills-text {
+          display: flex;
+          // justify-content: space-evenly;
+          font-size: 20px;
+          // text-align: center;
+        }
+        .skills-icons {
+          margin-top: 5px;
+          display: flex;
+          flex-wrap: wrap;
+          // justify-content: space-evenly;
+        }
+        .skills-icons > * {
+          margin: 5px 15px;
+        }
+      }
+      .content-title {
+        font-size: 24px;
+        font-weight: bold;
+        // text-align: center;
+      }
+      p {
+        margin: 5px 0;
+      }
+    }
+  }
+}
+
+.section-title {
+  font-weight: bold;
+  font-size: 42px;
+}
+
+.blue {
+  color: $blue;
+}
+.white {
+  color: white;
+}
+
+@keyframes titleAnimation {
+  0% {
+    transform: translateY(-50%);
+    opacity: 0%;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 100%;
+  }
+}
+
+@keyframes subTitleAnimation {
+  0% {
+    transform: translateY(50%);
+    opacity: 0%;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 100%;
+  }
+}
+@media (max-width: 1150px) {
+  .about-wrapper .about-section .about-section-content {
+    margin: 0 20px;
+  }
+}
+
+@media (max-width: 700px) {
+  .hero-wrapper .hero {
+    .hero-title {
+      font-size: 2.6rem;
+    }
+    .hero-subtitle {
+      font-size: 2rem;
+    }
+  }
+  .section-title {
+    margin: 0;
+  }
+
+  .about-wrapper .about-section {
+    flex-direction: column;
+  }
+}
+@media (max-width: 500px) {
+  .nav-wrapper .nav-option {
+    margin: 0;
+  }
+  .hero-wrapper .hero {
+    .hero-title {
+      font-size: 2.2rem;
+    }
+    .hero-subtitle {
+      font-size: 1.5rem;
+    }
+  }
+}

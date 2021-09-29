@@ -1,0 +1,168 @@
+import chartjs_Svg from '../svg/chartjs-icon.svg';
+import express_svg from '../svg/express-icon.svg';
+import weatherImg from '../img/Responsive_Weather.png';
+import todoImg from '../img/Responsive_todo.png';
+import sortingImg from '../img/sortingImg.png';
+import ProjectButtons from './ProjectButtons';
+
+function Project() {
+  return (
+    <>
+      <div className="project-wrapper">
+        <div className="project-text">
+          <div className="project-title">Weather App</div>
+          <div className="project-desc">
+            <div className="project-paragraph">
+              Global weather application that allows the user to search for a
+              specific city, country, etc and see the current weather
+              information.
+            </div>
+
+            <div className="project-paragraph">
+              Front end was made with{' '}
+              <span className="highlight-text">React.js</span>, styled with{' '}
+              <span className="highlight-text"> SASS </span> and the graphing
+              data was displayed using{' '}
+              <span className="highlight-text">Chart.js</span> and the public{' '}
+              <span className="highlight-text">API</span> Open Weather.
+            </div>
+
+            <div className="project-paragraph">
+              The back end <span className="highlight-text">REST API</span> was
+              created with <span className="highlight-text">Node.js</span> and{' '}
+              <span className="highlight-text">EXPRESS.js</span>
+            </div>
+          </div>
+
+          {/* ICONS */}
+          <div className="project-tech-icons">
+            <div title="React.js" className="react-color">
+              <i className="fab fa-react"></i>
+            </div>
+            <div title="HTML" className="html-color">
+              <i className="fab fa-html5"></i>
+            </div>
+            <div title="CSS" className="css-color">
+              <i className="fab fa-css3-alt"></i>
+            </div>
+            <div title="Javascript" className="javscript-color">
+              <i className="fab fa-js-square"></i>
+            </div>
+            <div title="SASS" className="sass-color">
+              <i className="fab fa-sass"></i>
+            </div>
+            <div title="Express.js">
+              <img
+                alt="express.js"
+                draggable="false"
+                width="60px"
+                src={express_svg}
+              ></img>
+            </div>
+            <div title="Chart.js">
+              <img
+                alt="chart.js"
+                draggable="false"
+                width="50px"
+                src={chartjs_Svg}
+              ></img>
+            </div>
+          </div>
+
+          <ProjectButtons />
+        </div>
+
+        <div className="project-image">
+          <img alt="weather" draggable="false" src={weatherImg}></img>
+        </div>
+      </div>
+
+      <div className="project-wrapper">
+        <div className="project-text">
+          <div className="project-title">To-do App</div>
+          <div className="project-desc">
+            <div className="project-paragraph">
+              Todo application that allows the user to create a list of tasks
+              they need to complete along with being able to view tasks that
+              they have already completed.
+            </div>
+
+            <div className="project-paragraph">
+              <div className="project-paragraph">
+                Front end was made with{' '}
+                <span className="highlight-text">React.js</span>, styled with{' '}
+                <span className="highlight-text"> SASS </span>. Browers{' '}
+                <span className="highlight-text">Local Storage</span> used to
+                store users list of tasks.
+              </div>
+            </div>
+          </div>
+
+          {/* ICONS */}
+          <div className="project-tech-icons">
+            <div title="React.js" className="react-color">
+              <i className="fab fa-react"></i>
+            </div>
+            <div title="HTML" className="html-color">
+              <i className="fab fa-html5"></i>
+            </div>
+            <div title="CSS" className="css-color">
+              <i className="fab fa-css3-alt"></i>
+            </div>
+            <div title="Javascript" className="javscript-color">
+              <i className="fab fa-js-square"></i>
+            </div>
+            <div title="SASS" className="sass-color">
+              <i className="fab fa-sass"></i>
+            </div>
+          </div>
+          <ProjectButtons />
+        </div>
+
+        <div className="project-image">
+          <img alt="weather" draggable="false" src={todoImg}></img>
+        </div>
+      </div>
+
+      <div className="project-wrapper">
+        <div className="project-text">
+          <div className="project-title">Sorting Algorithms Visualization</div>
+          <div className="project-desc">
+            <div className="project-paragraph">
+              Sorting Algorithms Visualization Website created with{' '}
+              <span className="highlight-text">Vanilla Javascript</span>. User
+              can pick between different sorting algorithms along with sort
+              speed and array size.
+            </div>
+            <div className="project-paragraph">
+              Sorting Algorithms:{' '}
+              <span className="highlight-text">Bubble Sort</span>,{' '}
+              <span className="highlight-text">Insertion Sort</span>,{' '}
+              <span className="highlight-text">Selection Sort</span>.
+            </div>
+          </div>
+
+          {/* ICONS */}
+          <div className="project-tech-icons">
+            <div title="HTML" className="html-color">
+              <i className="fab fa-html5"></i>
+            </div>
+            <div title="CSS" className="css-color">
+              <i className="fab fa-css3-alt"></i>
+            </div>
+            <div title="Javascript" className="javscript-color">
+              <i className="fab fa-js-square"></i>
+            </div>
+          </div>
+          <ProjectButtons />
+        </div>
+
+        <div className="project-image">
+          <img alt="weather" draggable="false" src={sortingImg}></img>
+        </div>
+      </div>
+    </>
+  );
+}
+
+export default Project;

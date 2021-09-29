@@ -1,0 +1,41 @@
+@mixin icon($color) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 5px;
+  .icon {
+    font-size: 32px;
+    color: $color;
+  }
+  .iconText {
+    font-size: 12px;
+    font-weight: bold;
+  }
+}
+
+//STYLES
+$sass: #ce679a;
+$react: #61dafb;
+$html: #e34c26;
+$css: #264de4;
+$javascript: #ffd000;
+$nodejs: #3c873a;
+
+.htmlIconWrapper {
+  @include icon($html);
+}
+.cssIconWrapper {
+  @include icon($css);
+}
+.javascriptIconWrapper {
+  @include icon($javascript);
+}
+.sassIconWrapper {
+  @include icon($sass);
+}
+.reactIconWrapper {
+  @include icon($react);
+}
+.typescriptIconWrapper {
+  @include icon($react);
+}
