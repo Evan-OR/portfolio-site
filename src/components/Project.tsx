@@ -1,11 +1,10 @@
-import react, { useEffect } from "react";
-import chartjs_Svg from "../svg/chartjs-icon.svg";
-import express_svg from "../svg/express-icon.svg";
-import typescript_svg from "../svg/typescript-icon.svg";
-import weatherImg from "../img/Responsive_Weather.png";
-import todoImg from "../img/Responsive_todo.png";
-import sortingImg from "../img/sortingImg.png";
-import ProjectButtons from "./ProjectButtons";
+import chartjs_Svg from '../svg/chartjs-icon.svg';
+import azure_svg from '../svg/azure.svg';
+import typescript_svg from '../svg/typescript-icon.svg';
+import weatherImg from '../img/Responsive_Weather.png';
+import todoImg from '../img/Responsive_todo.png';
+import sortingImg from '../img/sortingImg.png';
+import ProjectButtons from './ProjectButtons';
 
 function Project() {
   return (
@@ -15,15 +14,21 @@ function Project() {
           <div className="project-title">My Portfolio Site</div>
           <div className="project-desc">
             <div className="project-paragraph">
-              Mobile responive static website to show off my web development
-              projects.
+              The current site you're scrolling though is a project of mine in
+              itself. It's a mobile responive website to show off my web
+              development projects.
             </div>
 
             <div className="project-paragraph">
-              I created this site using{" "}
-              <span className="highlight-text">React.js</span>,{" "}
-              <span className="highlight-text">Typescript</span> and{" "}
-              <span className="highlight-text">Sass</span>.
+              I created this site using{' '}
+              <span className="highlight-text">React.js</span>,{' '}
+              <span className="highlight-text">Typescript</span> and{' '}
+              <span className="highlight-text">Sass</span>. This site is hosted
+              using{' '}
+              <span className="highlight-text">
+                Microsoft Azure App Services
+              </span>
+              .
             </div>
           </div>
 
@@ -50,6 +55,15 @@ function Project() {
             <div title="SASS" className="sass-color">
               <i className="fab fa-sass"></i>
             </div>
+            <div title="Azure">
+              <img
+                className="azure"
+                alt="Azure"
+                draggable="false"
+                width="100px"
+                src={azure_svg}
+              ></img>
+            </div>
           </div>
 
           <ProjectButtons
@@ -59,7 +73,7 @@ function Project() {
         </div>
 
         <div className="project-image">
-          <img alt="weather" draggable="false" src={weatherImg}></img>
+          <i className="fas fa-tools"></i>
         </div>
       </div>
 
@@ -74,17 +88,17 @@ function Project() {
             </div>
 
             <div className="project-paragraph">
-              Front end was made with{" "}
-              <span className="highlight-text">React.js</span>, styled with{" "}
+              Front end was made with{' '}
+              <span className="highlight-text">React.js</span>, styled with{' '}
               <span className="highlight-text"> SASS </span> and the graphing
-              data was displayed using{" "}
-              <span className="highlight-text">Chart.js</span> and the public{" "}
+              data was displayed using{' '}
+              <span className="highlight-text">Chart.js</span> and the public{' '}
               <span className="highlight-text">API</span> Open Weather.
             </div>
 
             <div className="project-paragraph">
               The back end <span className="highlight-text">REST API</span> was
-              created with <span className="highlight-text">Node.js</span> and{" "}
+              created with <span className="highlight-text">Node.js</span> and{' '}
               <span className="highlight-text">EXPRESS.js</span>
             </div>
           </div>
@@ -106,14 +120,6 @@ function Project() {
             <div title="SASS" className="sass-color">
               <i className="fab fa-sass"></i>
             </div>
-            <div title="Express.js">
-              <img
-                alt="express.js"
-                draggable="false"
-                width="60px"
-                src={express_svg}
-              ></img>
-            </div>
             <div title="Chart.js">
               <img
                 alt="chart.js"
@@ -124,7 +130,10 @@ function Project() {
             </div>
           </div>
 
-          <ProjectButtons githubLink="" projectLink="" />
+          <ProjectButtons
+            githubLink="https://github.com/Evan-OR/weather-app"
+            projectLink="https://evan-or.github.io/weather-app/"
+          />
         </div>
 
         <div className="project-image">
@@ -144,9 +153,9 @@ function Project() {
 
             <div className="project-paragraph">
               <div className="project-paragraph">
-                Front end was made with{" "}
-                <span className="highlight-text">React.js</span>, styled with{" "}
-                <span className="highlight-text"> SASS </span>. Browers{" "}
+                Front end was made with{' '}
+                <span className="highlight-text">React.js</span>, styled with{' '}
+                <span className="highlight-text"> SASS </span>. Browers{' '}
                 <span className="highlight-text">Local Storage</span> used to
                 store users list of tasks.
               </div>
@@ -187,15 +196,15 @@ function Project() {
           <div className="project-title">Sorting Algorithms Visualization</div>
           <div className="project-desc">
             <div className="project-paragraph">
-              Sorting Algorithms Visualization Website created with{" "}
+              Sorting Algorithms Visualization Website created with{' '}
               <span className="highlight-text">Vanilla Javascript</span>. User
               can pick between different sorting algorithms along with sort
               speed and array size.
             </div>
             <div className="project-paragraph">
-              Sorting Algorithms:{" "}
-              <span className="highlight-text">Bubble Sort</span>,{" "}
-              <span className="highlight-text">Insertion Sort</span>,{" "}
+              Sorting Algorithms:{' '}
+              <span className="highlight-text">Bubble Sort</span>,{' '}
+              <span className="highlight-text">Insertion Sort</span>,{' '}
               <span className="highlight-text">Selection Sort</span>.
             </div>
           </div>
