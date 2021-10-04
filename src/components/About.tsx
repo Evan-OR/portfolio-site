@@ -1,4 +1,4 @@
-import chartjs_Svg from '../svg/chartjs-icon.svg';
+import React, { useEffect } from 'react';
 import express_svg from '../svg/express-icon.svg';
 import typescript_svg from '../svg/typescript-icon.svg';
 import node_svg from '../svg/nodejs-icon.svg';
@@ -8,11 +8,17 @@ import gitHub_svg from '../svg/github-icon.svg';
 import photoshop_svg from '../svg/photoshop-icon.svg';
 import figma_svg from '../svg/figma-icon.svg';
 import cSharp_svg from '../svg/cSharp-icon.svg';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 function About() {
+  useEffect(() => {
+    Aos.init({ duration: 500, once: true });
+  }, []);
+
   return (
     <div id="About" className="about-wrapper">
-      <div className="about-section">
+      <div data-aos="fade-up" className="about-section">
         <div className="about-section-title">
           <span className="about-highlight">About</span> Me
         </div>
@@ -32,7 +38,7 @@ function About() {
         </div>
       </div>
 
-      <div className="about-section">
+      <div data-aos="fade-up" className="about-section">
         <div className="about-section-title">
           My <span className="about-highlight">Skillset</span>
         </div>
@@ -154,7 +160,7 @@ function About() {
         </div>
       </div>
 
-      <div className="about-section">
+      <div data-aos="fade-up" className="about-section">
         <div className="about-section-title">
           <span className="about-highlight">Contact</span> Me
         </div>

@@ -1,16 +1,22 @@
+import React, { useEffect } from 'react';
 import chartjs_Svg from '../svg/chartjs-icon.svg';
-import azure_svg from '../svg/azure.svg';
 import typescript_svg from '../svg/typescript-icon.svg';
 import weatherImg from '../img/Responsive_Weather.png';
 import todoImg from '../img/Responsive_todo.png';
 import portfolioImg from '../img/Responsive_portfolio.png';
 import sortingImg from '../img/sortingImg.png';
 import ProjectButtons from './ProjectButtons';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 function Project() {
+  useEffect(() => {
+    Aos.init({ duration: 500, once: true });
+  }, []);
+
   return (
     <>
-      <div className="project-wrapper">
+      <div data-aos="fade-up" className="project-wrapper">
         <div className="project-text">
           <div className="project-title">My Portfolio Site</div>
           <div className="project-desc">
@@ -64,7 +70,7 @@ function Project() {
         </div>
       </div>
 
-      <div className="project-wrapper">
+      <div data-aos="fade-up" className="project-wrapper">
         <div className="project-text">
           <div className="project-title">Weather App</div>
           <div className="project-desc">
@@ -122,7 +128,7 @@ function Project() {
         </div>
       </div>
 
-      <div className="project-wrapper">
+      <div data-aos="fade-up" className="project-wrapper">
         <div className="project-text">
           <div className="project-title">To-do App</div>
           <div className="project-desc">
@@ -172,7 +178,7 @@ function Project() {
         </div>
       </div>
 
-      <div className="project-wrapper">
+      <div data-aos="fade-up" className="project-wrapper">
         <div className="project-text">
           <div className="project-title">Sorting Algorithms Visualization</div>
           <div className="project-desc">
