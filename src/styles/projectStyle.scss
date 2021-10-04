@@ -1,5 +1,5 @@
 //MIXINS
-@use "sass:math";
+@use 'sass:math';
 
 @mixin buttonMix($bg-color, $font-color, $lighten) {
   background: $bg-color;
@@ -16,7 +16,7 @@
   &:hover {
     transform: scale(1.03);
 
-    @if ($lighten == "true") {
+    @if ($lighten == 'true') {
       background: lighten($bg-color, 5%);
     } @else {
       background: darken($bg-color, 5%);
@@ -120,7 +120,7 @@ $dark_font: #272727;
         padding: 10px 35px;
 
         .project-paragraph {
-          margin: 5px 0;
+          margin: 10px 0;
 
           .highlight-text {
             font-weight: bold;
@@ -164,10 +164,10 @@ $dark_font: #272727;
           }
 
           .live {
-            @include buttonMix(white, $dark_font, "false");
+            @include buttonMix(white, $dark_font, 'false');
           }
           .code {
-            @include buttonMix($dark_font, white, "true");
+            @include buttonMix($dark_font, white, 'true');
           }
         }
       }

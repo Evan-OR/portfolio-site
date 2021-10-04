@@ -1,13 +1,13 @@
-import chartjs_Svg from "../svg/chartjs-icon.svg";
-import express_svg from "../svg/express-icon.svg";
-import typescript_svg from "../svg/typescript-icon.svg";
-import node_svg from "../svg/nodejs-icon.svg";
-import java_svg from "../svg/java-icon.svg";
-import git_svg from "../svg/git-icon.svg";
-import gitHub_svg from "../svg/github-icon.svg";
-import photoshop_svg from "../svg/photoshop-icon.svg";
-import figma_svg from "../svg/figma-icon.svg";
-import cSharp_svg from "../svg/cSharp-icon.svg";
+import chartjs_Svg from '../svg/chartjs-icon.svg';
+import express_svg from '../svg/express-icon.svg';
+import typescript_svg from '../svg/typescript-icon.svg';
+import node_svg from '../svg/nodejs-icon.svg';
+import java_svg from '../svg/java-icon.svg';
+import git_svg from '../svg/git-icon.svg';
+import gitHub_svg from '../svg/github-icon.svg';
+import photoshop_svg from '../svg/photoshop-icon.svg';
+import figma_svg from '../svg/figma-icon.svg';
+import cSharp_svg from '../svg/cSharp-icon.svg';
 
 function About() {
   return (
@@ -41,7 +41,7 @@ function About() {
           <div className="content-title">Front-end</div>
           <div className="skills-wrapper">
             <div className="skills-text">
-              HTML, CSS, SASS, Javascript, Typescript, React.js, Chart.js
+              HTML, CSS, SASS, Javascript, Typescript, React.js.
             </div>
             <div className="skills-icons">
               <div title="HTML" className="html-color">
@@ -67,14 +67,6 @@ function About() {
               </div>
               <div title="React.js" className="react-color">
                 <i className="fab fa-react"></i>
-              </div>
-              <div title="Chart.js">
-                <img
-                  alt="chart.js"
-                  draggable="false"
-                  width="50px"
-                  src={chartjs_Svg}
-                ></img>
               </div>
             </div>
           </div>

@@ -3,6 +3,7 @@ import azure_svg from '../svg/azure.svg';
 import typescript_svg from '../svg/typescript-icon.svg';
 import weatherImg from '../img/Responsive_Weather.png';
 import todoImg from '../img/Responsive_todo.png';
+import portfolioImg from '../img/Responsive_portfolio.png';
 import sortingImg from '../img/sortingImg.png';
 import ProjectButtons from './ProjectButtons';
 
@@ -23,12 +24,7 @@ function Project() {
               I created this site using{' '}
               <span className="highlight-text">React.js</span>,{' '}
               <span className="highlight-text">Typescript</span> and{' '}
-              <span className="highlight-text">Sass</span>. This site is hosted
-              using{' '}
-              <span className="highlight-text">
-                Microsoft Azure App Services
-              </span>
-              .
+              <span className="highlight-text">Sass</span>.
             </div>
           </div>
 
@@ -55,15 +51,6 @@ function Project() {
             <div title="SASS" className="sass-color">
               <i className="fab fa-sass"></i>
             </div>
-            <div title="Azure">
-              <img
-                className="azure"
-                alt="Azure"
-                draggable="false"
-                width="100px"
-                src={azure_svg}
-              ></img>
-            </div>
           </div>
 
           <ProjectButtons
@@ -73,7 +60,7 @@ function Project() {
         </div>
 
         <div className="project-image">
-          <i className="fas fa-tools"></i>
+          <img alt="weather" draggable="false" src={portfolioImg}></img>
         </div>
       </div>
 
@@ -93,13 +80,7 @@ function Project() {
               <span className="highlight-text"> SASS </span> and the graphing
               data was displayed using{' '}
               <span className="highlight-text">Chart.js</span> and the public{' '}
-              <span className="highlight-text">API</span> Open Weather.
-            </div>
-
-            <div className="project-paragraph">
-              The back end <span className="highlight-text">REST API</span> was
-              created with <span className="highlight-text">Node.js</span> and{' '}
-              <span className="highlight-text">EXPRESS.js</span>
+              <span className="highlight-text"> REST API</span> OpenWeatherMap.
             </div>
           </div>
 
