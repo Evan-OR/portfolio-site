@@ -137,6 +137,11 @@ code {
     .about-section-content {
       flex: 1;
 
+      .contact-text {
+        font-size: 20px;
+        overflow-wrap: break-word;
+      }
+
       .skills-wrapper {
         display: flex;
         flex-direction: column;
@@ -237,5 +242,15 @@ code {
     .hero-subtitle {
       font-size: 1.5rem;
     }
+  }
+}
+@media (max-width: 300px) {
+  .section-title {
+    font-size: 30px;
+    overflow-wrap: break-word;
+  }
+
+  .about-wrapper .about-section .about-section-title {
+    font-size: 2rem;
   }
 }

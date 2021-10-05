@@ -167,14 +167,10 @@ function About() {
 
         <div className="about-section-content">
           <div className="content-title">E-mail</div>
-          <div className="skills-wrapper">
-            <div className="skills-text">theevanorourke@gmail.com</div>
-          </div>
+          <div className="contact-text">theevanorourke@gmail.com</div>
 
           <div className="content-title">Phone Number</div>
-          <div className="skills-wrapper">
-            <div className="skills-text">087 361 9630</div>
-          </div>
+          <div className="contact-text">087 361 9630</div>
         </div>
       </div>
     </div>
