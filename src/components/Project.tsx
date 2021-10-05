@@ -18,60 +18,6 @@ function Project() {
     <>
       <div data-aos="fade-up" className="project-wrapper">
         <div className="project-text">
-          <div className="project-title">My Portfolio Site</div>
-          <div className="project-desc">
-            <div className="project-paragraph">
-              The current site you're scrolling though is a project of mine in
-              itself. It's a mobile responive website to show off my web
-              development projects.
-            </div>
-
-            <div className="project-paragraph">
-              I created this site using{' '}
-              <span className="highlight-text">React.js</span>,{' '}
-              <span className="highlight-text">Typescript</span> and{' '}
-              <span className="highlight-text">Sass</span>.
-            </div>
-          </div>
-
-          {/* ICONS */}
-          <div className="project-tech-icons">
-            <div title="React.js" className="react-color">
-              <i className="fab fa-react"></i>
-            </div>
-            <div title="HTML" className="html-color">
-              <i className="fab fa-html5"></i>
-            </div>
-            <div title="CSS" className="css-color">
-              <i className="fab fa-css3-alt"></i>
-            </div>
-            <div title="Typescript">
-              <img
-                className="typescript"
-                alt="typescript"
-                draggable="false"
-                width="30px"
-                src={typescript_svg}
-              ></img>
-            </div>
-            <div title="SASS" className="sass-color">
-              <i className="fab fa-sass"></i>
-            </div>
-          </div>
-
-          <ProjectButtons
-            githubLink="https://github.com/Evan-OR/portfolio-site"
-            onlyDisplayCode={true}
-          />
-        </div>
-
-        <div className="project-image">
-          <img alt="weather" draggable="false" src={portfolioImg}></img>
-        </div>
-      </div>
-
-      <div data-aos="fade-up" className="project-wrapper">
-        <div className="project-text">
           <div className="project-title">Weather App</div>
           <div className="project-desc">
             <div className="project-paragraph">
@@ -175,6 +121,60 @@ function Project() {
 
         <div className="project-image">
           <img alt="weather" draggable="false" src={todoImg}></img>
+        </div>
+      </div>
+
+      <div data-aos="fade-up" className="project-wrapper">
+        <div className="project-text">
+          <div className="project-title">My Portfolio Site</div>
+          <div className="project-desc">
+            <div className="project-paragraph">
+              The current site you're scrolling though is a project of mine in
+              itself. It's a mobile responive website to show off my web
+              development projects.
+            </div>
+
+            <div className="project-paragraph">
+              I created this site using{' '}
+              <span className="highlight-text">React.js</span>,{' '}
+              <span className="highlight-text">Typescript</span> and{' '}
+              <span className="highlight-text">Sass</span>.
+            </div>
+          </div>
+
+          {/* ICONS */}
+          <div className="project-tech-icons">
+            <div title="React.js" className="react-color">
+              <i className="fab fa-react"></i>
+            </div>
+            <div title="HTML" className="html-color">
+              <i className="fab fa-html5"></i>
+            </div>
+            <div title="CSS" className="css-color">
+              <i className="fab fa-css3-alt"></i>
+            </div>
+            <div title="Typescript">
+              <img
+                className="typescript"
+                alt="typescript"
+                draggable="false"
+                width="30px"
+                src={typescript_svg}
+              ></img>
+            </div>
+            <div title="SASS" className="sass-color">
+              <i className="fab fa-sass"></i>
+            </div>
+          </div>
+
+          <ProjectButtons
+            githubLink="https://github.com/Evan-OR/portfolio-site"
+            onlyDisplayCode={true}
+          />
+        </div>
+
+        <div className="project-image">
+          <img alt="weather" draggable="false" src={portfolioImg}></img>
         </div>
       </div>
 
