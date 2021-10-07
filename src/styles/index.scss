@@ -75,11 +75,11 @@ code {
     .hero-title {
       font-family: 'Permanent Marker', cursive;
       font-size: 6em;
-      animation: titleAnimation 1.5s ease-out 0s 1 alternate;
+      // animation: titleAnimation 1.5s ease-out 0s 1 alternate;
     }
     .hero-subtitle {
       font-size: 3em;
-      animation: subTitleAnimation 1.5s ease-out 0s 1 alternate;
+      // animation: subTitleAnimation 1.5s ease-out 0s 1 alternate;
     }
   }
 
@@ -235,6 +235,7 @@ code {
 @media (max-width: 500px) {
   .nav-wrapper .nav-option {
     margin: 0;
+    font: 1.5em;
   }
   .hero-wrapper .hero {
     .hero-title {
