@@ -169,7 +169,7 @@ function About() {
           <div className="content-title">E-mail</div>
           <div className="contact-text">theevanorourke@gmail.com</div>
 
-          <div className="content-title">Phone Number</div>
+          {/* <div className="content-title">Phone Number</div> */}
           {/* <div className="contact-text">087 361 9630</div> */}
         </div>
       </div>
