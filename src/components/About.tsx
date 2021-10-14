@@ -25,8 +25,8 @@ function About() {
 
         <div className="about-section-content">
           <p>
-            I am a self-taught web developer that is looking for opportunities
-            to grow my skill-set in a professional environment.
+            I am Web Developer that is looking for opportunities to grow my
+            skill-set in a professional environment.
           </p>
           <p>
             I am currently studying Computing at National College of Ireland.

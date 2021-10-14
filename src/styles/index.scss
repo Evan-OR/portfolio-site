@@ -213,6 +213,10 @@ code {
   .about-wrapper .about-section .about-section-content {
     margin: 0 20px;
   }
+
+  .hero-wrapper .shape-divider svg {
+    height: 64px;
+  }
 }
 
 @media (max-width: 700px) {
@@ -231,6 +235,10 @@ code {
   .about-wrapper .about-section {
     flex-direction: column;
   }
+
+  .hero-wrapper .shape-divider svg {
+    height: 44px;
+  }
 }
 @media (max-width: 500px) {
   .nav-wrapper .nav-option {
@@ -244,6 +252,10 @@ code {
     .hero-subtitle {
       font-size: 1.5rem;
     }
+  }
+
+  .hero-wrapper .shape-divider svg {
+    height: 24px;
   }
 }
 @media (max-width: 300px) {
