@@ -25,16 +25,10 @@ function About() {
 
         <div className="about-section-content">
           <p>
-            I am Web Developer that is looking for opportunities to grow my
-            skill-set in a professional environment.
+            I am Web Developer that is looking for opportunities to grow my skill-set in a professional environment.
           </p>
-          <p>
-            I am currently studying Computing at National College of Ireland.
-          </p>
-          <p>
-            I have a passion for for creating clean and user-friendly
-            experiences.
-          </p>
+          <p>I am currently studying Computing at National College of Ireland.</p>
+          <p>I have a passion for for creating clean and user-friendly experiences.</p>
         </div>
       </div>
 
@@ -46,9 +40,7 @@ function About() {
         <div className="about-section-content">
           <div className="content-title">Front-end</div>
           <div className="skills-wrapper">
-            <div className="skills-text">
-              HTML, CSS, SASS, Javascript, Typescript, React.js.
-            </div>
+            {/* <div className="skills-text">HTML, CSS, SASS, Javascript, Typescript, React.js.</div> */}
             <div className="skills-icons">
               <div title="HTML" className="html-color">
                 <i className="fab fa-html5"></i>
@@ -63,13 +55,7 @@ function About() {
                 <i className="fab fa-js-square"></i>
               </div>
               <div title="Typescript">
-                <img
-                  className="typescript"
-                  alt="typescript"
-                  draggable="false"
-                  width="30px"
-                  src={typescript_svg}
-                ></img>
+                <img className="typescript" alt="typescript" draggable="false" width="30px" src={typescript_svg}></img>
               </div>
               <div title="React.js" className="react-color">
                 <i className="fab fa-react"></i>
@@ -79,81 +65,39 @@ function About() {
 
           <div className="content-title">Back-end</div>
           <div className="skills-wrapper">
-            <div className="skills-text">Node.js, Express.js</div>
+            {/* <div className="skills-text">Node.js, Express.js</div> */}
 
             <div className="skills-icons">
               <div title="Node.js">
-                <img
-                  alt="express.js"
-                  draggable="false"
-                  width="50px"
-                  src={node_svg}
-                ></img>
+                <img alt="express.js" draggable="false" width="50px" src={node_svg}></img>
               </div>
               <div title="Express.js">
-                <img
-                  alt="express.js"
-                  draggable="false"
-                  width="60px"
-                  src={express_svg}
-                ></img>
+                <img alt="express.js" draggable="false" width="60px" src={express_svg}></img>
               </div>
             </div>
           </div>
 
           <div className="content-title">Other</div>
           <div className="skills-wrapper">
-            <div className="skills-text">
-              C#, Java, git, Github, Photoshop, Figma
-            </div>
+            {/* <div className="skills-text">C#, Java, git, Github, Photoshop, Figma</div> */}
             <div className="skills-icons">
               <div title="C#">
-                <img
-                  alt="Java"
-                  draggable="false"
-                  width="40px"
-                  src={cSharp_svg}
-                ></img>
+                <img alt="Java" draggable="false" width="40px" src={cSharp_svg}></img>
               </div>
               <div title="Java">
-                <img
-                  alt="Java"
-                  draggable="false"
-                  width="26px"
-                  src={java_svg}
-                ></img>
+                <img alt="Java" draggable="false" width="26px" src={java_svg}></img>
               </div>
               <div title="git">
-                <img
-                  alt="git"
-                  draggable="false"
-                  width="50px"
-                  src={git_svg}
-                ></img>
+                <img alt="git" draggable="false" width="50px" src={git_svg}></img>
               </div>
               <div title="GitHub">
-                <img
-                  alt="github"
-                  draggable="false"
-                  width="40px"
-                  src={gitHub_svg}
-                ></img>
+                <img alt="github" draggable="false" width="40px" src={gitHub_svg}></img>
               </div>
               <div title="Photoshop">
-                <img
-                  alt="photoshop"
-                  draggable="false"
-                  width="38px"
-                  src={photoshop_svg}
-                ></img>
+                <img alt="photoshop" draggable="false" width="38px" src={photoshop_svg}></img>
               </div>
               <div title="Figma">
-                <img
-                  alt="Figma"
-                  draggable="false"
-                  width="26px"
-                  src={figma_svg}
-                ></img>
+                <img alt="Figma" draggable="false" width="26px" src={figma_svg}></img>
               </div>
             </div>
           </div>
@@ -168,9 +112,16 @@ function About() {
         <div className="about-section-content">
           <div className="content-title">E-mail</div>
           <div className="contact-text">theevanorourke@gmail.com</div>
-
-          {/* <div className="content-title">Phone Number</div> */}
-          {/* <div className="contact-text">087 361 9630</div> */}
+          <div className="content-title">
+            <div className="contact-text">
+              <a href="https://www.linkedin.com/in/evan-orourke">LinkedIn</a>
+            </div>
+          </div>
+          <div className="content-title">
+            <div className="contact-text">
+              <a href="https://github.com/Evan-OR">GitHub</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>

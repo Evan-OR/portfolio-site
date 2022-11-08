@@ -14,16 +14,14 @@ html {
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
+    'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
 .nav-wrapper {
@@ -128,7 +126,7 @@ code {
       font-weight: bold;
       text-align: center;
       font-size: 3rem;
-      filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.226));
+      // filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.226));
 
       .about-highlight {
         color: $blue;
@@ -141,6 +139,9 @@ code {
       .contact-text {
         font-size: 20px;
         overflow-wrap: break-word;
+        a {
+          color: #2e86ab;
+        }
       }
 
       .skills-wrapper {
@@ -170,7 +171,7 @@ code {
         // text-align: center;
       }
       p {
-        margin: 5px 0;
+        margin: 20px 0;
       }
     }
   }
