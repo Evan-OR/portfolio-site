@@ -73,10 +73,18 @@ code {
     .hero-title {
       font-family: 'Permanent Marker', cursive;
       font-size: 6em;
+      animation-name: titleAnimation;
+      animation-duration: 1.2s;
+      animation-timing-function: ease-in-out;
       // animation: titleAnimation 1.5s ease-out 0s 1 alternate;
     }
     .hero-subtitle {
       font-size: 3em;
+      animation-name: subTitleAnimation;
+      animation-duration: 1.2s;
+      animation-delay: 0.5s;
+      animation-timing-function: ease-in-out;
+      animation-fill-mode: both;
       // animation: subTitleAnimation 1.5s ease-out 0s 1 alternate;
     }
   }
@@ -202,7 +210,7 @@ code {
 
 @keyframes subTitleAnimation {
   0% {
-    transform: translateY(50%);
+    transform: translateY(+50%);
     opacity: 0%;
   }
   100% {

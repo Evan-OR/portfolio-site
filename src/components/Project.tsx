@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import chartjs_Svg from '../svg/chartjs-icon.svg';
 import typescript_svg from '../svg/typescript-icon.svg';
 import weatherImg from '../img/Responsive_Weather.png';
-import todoImg from '../img/Responsive_todo.png';
+import todoImg from '../img/Responsive_taskmanager.png';
 import portfolioImg from '../img/Responsive_portfolio.png';
 import sortingImg from '../img/sortingImg.png';
 import ProjectButtons from './ProjectButtons';
@@ -21,16 +21,13 @@ function Project() {
           <div className="project-title">Weather App</div>
           <div className="project-desc">
             <div className="project-paragraph">
-              Global weather application that allows the user to search for a
-              specific city, country, etc and see the current weather
-              information.
+              Global weather application that allows the user to search for a specific city, country, etc and see the
+              current weather information.
             </div>
 
             <div className="project-paragraph">
-              Front end was made with{' '}
-              <span className="highlight-text">React.js</span>, styled with{' '}
-              <span className="highlight-text"> SASS </span> and the graphing
-              data was displayed using{' '}
+              Front end was made with <span className="highlight-text">React.js</span>, styled with{' '}
+              <span className="highlight-text"> SASS </span> and the graphing data was displayed using{' '}
               <span className="highlight-text">Chart.js</span> and the public{' '}
               <span className="highlight-text"> REST API</span> OpenWeatherMap.
             </div>
@@ -54,12 +51,7 @@ function Project() {
               <i className="fab fa-sass"></i>
             </div>
             <div title="Chart.js">
-              <img
-                alt="chart.js"
-                draggable="false"
-                width="50px"
-                src={chartjs_Svg}
-              ></img>
+              <img alt="chart.js" draggable="false" width="50px" src={chartjs_Svg}></img>
             </div>
           </div>
 
@@ -76,21 +68,20 @@ function Project() {
 
       <div data-aos="fade-up" className="project-wrapper">
         <div className="project-text">
-          <div className="project-title">To-do App</div>
+          <div className="project-title">Task Management App</div>
           <div className="project-desc">
             <div className="project-paragraph">
-              Todo application that allows the user to create a list of tasks
-              they need to complete along with being able to view tasks that
-              they have already completed.
+              Task Management application that allows the user to create a list of tasks they need to complete. Each
+              task can be customised to have an icon, colour and priority. The task list can also be sorted based on the
+              icon, colour and priority.
             </div>
 
             <div className="project-paragraph">
               <div className="project-paragraph">
-                Front end was made with{' '}
-                <span className="highlight-text">React.js</span>, styled with{' '}
+                Front end was made with <span className="highlight-text">React.js</span> and{' '}
+                <span className="highlight-text">TypeScript</span>, styled with{' '}
                 <span className="highlight-text"> SASS </span>. Browers{' '}
-                <span className="highlight-text">Local Storage</span> used to
-                store users list of tasks.
+                <span className="highlight-text">Local Storage</span> used to store users list of tasks.
               </div>
             </div>
           </div>
@@ -114,8 +105,8 @@ function Project() {
             </div>
           </div>
           <ProjectButtons
-            githubLink="https://github.com/Evan-OR/todo-react"
-            projectLink="https://evan-or.github.io/todo-react/"
+            githubLink="https://github.com/Evan-OR/todo-v2"
+            projectLink="https://evan-or.github.io/todo-v2/"
           />
         </div>
 
@@ -129,16 +120,13 @@ function Project() {
           <div className="project-title">My Portfolio Site</div>
           <div className="project-desc">
             <div className="project-paragraph">
-              The current site you're scrolling though is a project of mine in
-              itself. It's a mobile responive website to show off my web
-              development projects.
+              The current site you're scrolling though is a project of mine in itself. It's a mobile responive website
+              to show off my web development projects.
             </div>
 
             <div className="project-paragraph">
-              I created this site using{' '}
-              <span className="highlight-text">React.js</span>,{' '}
-              <span className="highlight-text">Typescript</span> and{' '}
-              <span className="highlight-text">Sass</span>.
+              I created this site using <span className="highlight-text">React.js</span>,{' '}
+              <span className="highlight-text">Typescript</span> and <span className="highlight-text">Sass</span>.
             </div>
           </div>
 
@@ -154,23 +142,14 @@ function Project() {
               <i className="fab fa-css3-alt"></i>
             </div>
             <div title="Typescript">
-              <img
-                className="typescript"
-                alt="typescript"
-                draggable="false"
-                width="30px"
-                src={typescript_svg}
-              ></img>
+              <img className="typescript" alt="typescript" draggable="false" width="30px" src={typescript_svg}></img>
             </div>
             <div title="SASS" className="sass-color">
               <i className="fab fa-sass"></i>
             </div>
           </div>
 
-          <ProjectButtons
-            githubLink="https://github.com/Evan-OR/portfolio-site"
-            onlyDisplayCode={true}
-          />
+          <ProjectButtons githubLink="https://github.com/Evan-OR/portfolio-site" onlyDisplayCode={true} />
         </div>
 
         <div className="project-image">
@@ -184,13 +163,11 @@ function Project() {
           <div className="project-desc">
             <div className="project-paragraph">
               Sorting Algorithms Visualization Website created with{' '}
-              <span className="highlight-text">Vanilla Javascript</span>. User
-              can pick between different sorting algorithms along with sort
-              speed and array size.
+              <span className="highlight-text">Vanilla Javascript</span>. User can pick between different sorting
+              algorithms along with sort speed and array size.
             </div>
             <div className="project-paragraph">
-              Sorting Algorithms:{' '}
-              <span className="highlight-text">Bubble Sort</span>,{' '}
+              Sorting Algorithms: <span className="highlight-text">Bubble Sort</span>,{' '}
               <span className="highlight-text">Insertion Sort</span>,{' '}
               <span className="highlight-text">Selection Sort</span>.
             </div>
