@@ -76,6 +76,7 @@ code {
       animation-name: titleAnimation;
       animation-duration: 1.2s;
       animation-timing-function: ease-in-out;
+      animation-fill-mode: backwards;
       // animation: titleAnimation 1.5s ease-out 0s 1 alternate;
     }
     .hero-subtitle {
@@ -84,7 +85,7 @@ code {
       animation-duration: 1.2s;
       animation-delay: 0.5s;
       animation-timing-function: ease-in-out;
-      animation-fill-mode: both;
+      animation-fill-mode: backwards;
       // animation: subTitleAnimation 1.5s ease-out 0s 1 alternate;
     }
   }
