@@ -73,19 +73,21 @@ code {
     .hero-title {
       font-family: 'Permanent Marker', cursive;
       font-size: 6em;
-      animation-name: titleAnimation;
-      animation-duration: 1.2s;
-      animation-timing-function: ease-in-out;
-      animation-fill-mode: backwards;
+      transition-property: opacity, transform;
+      transition-duration: 1s;
+      transition-timing-function: ease-in-out;
+      opacity: 0;
+      transform: translateY(-50%);
       // animation: titleAnimation 1.5s ease-out 0s 1 alternate;
     }
     .hero-subtitle {
       font-size: 3em;
-      animation-name: subTitleAnimation;
-      animation-duration: 1.2s;
-      animation-delay: 0.5s;
-      animation-timing-function: ease-in-out;
-      animation-fill-mode: backwards;
+      transition-property: opacity, transform;
+      transition-duration: 1s;
+      transition-timing-function: ease-in-out;
+      transition-delay: 0.5s;
+      opacity: 0;
+      transform: translateY(+50%);
       // animation: subTitleAnimation 1.5s ease-out 0s 1 alternate;
     }
   }
@@ -196,6 +198,15 @@ code {
 }
 .white {
   color: white;
+}
+
+#heroTitle {
+  opacity: 1;
+  transform: translateY(0);
+}
+#heroSubTitle {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 @keyframes titleAnimation {
