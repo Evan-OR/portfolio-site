@@ -4,7 +4,7 @@ import typescript_svg from '../svg/typescript-icon.svg';
 import node_svg from '../svg/nodejs-icon.svg';
 import java_svg from '../svg/java-icon.svg';
 import git_svg from '../svg/git-icon.svg';
-import gitHub_svg from '../svg/github-icon.svg';
+import mysql_svg from '../svg/mysql.svg';
 import photoshop_svg from '../svg/photoshop-icon.svg';
 import figma_svg from '../svg/figma-icon.svg';
 import cSharp_svg from '../svg/cSharp-icon.svg';
@@ -25,7 +25,8 @@ function About() {
 
         <div className="about-section-content">
           <p>
-            I am Web Developer that is looking for opportunities to grow my skill-set in a professional environment.
+            I am a Software Engineer that is looking for opportunities to grow my skill-set in a professional
+            environment.
           </p>
           <p>I am currently studying Computing at National College of Ireland.</p>
           <p>I have a passion for for creating clean and user-friendly experiences.</p>
@@ -55,7 +56,7 @@ function About() {
                 <i className="fab fa-js-square"></i>
               </div>
               <div title="Typescript">
-                <img className="typescript" alt="typescript" draggable="false" width="30px" src={typescript_svg}></img>
+                <img className="typescript" alt="typescript" draggable="false" width="45px" src={typescript_svg}></img>
               </div>
               <div title="React.js" className="react-color">
                 <i className="fab fa-react"></i>
@@ -68,11 +69,14 @@ function About() {
             {/* <div className="skills-text">Node.js, Express.js</div> */}
 
             <div className="skills-icons">
+              <div title="Express.js">
+                <img alt="My SQL" draggable="false" width="110px" src={mysql_svg}></img>
+              </div>
               <div title="Node.js">
-                <img alt="express.js" draggable="false" width="50px" src={node_svg}></img>
+                <img alt="express.js" draggable="false" width="70px" src={node_svg}></img>
               </div>
               <div title="Express.js">
-                <img alt="express.js" draggable="false" width="60px" src={express_svg}></img>
+                <img alt="express.js" draggable="false" width="80px" src={express_svg}></img>
               </div>
             </div>
           </div>
@@ -81,23 +85,26 @@ function About() {
           <div className="skills-wrapper">
             {/* <div className="skills-text">C#, Java, git, Github, Photoshop, Figma</div> */}
             <div className="skills-icons">
-              <div title="C#">
-                <img alt="Java" draggable="false" width="40px" src={cSharp_svg}></img>
-              </div>
               <div title="Java">
-                <img alt="Java" draggable="false" width="26px" src={java_svg}></img>
+                <img alt="Java" draggable="false" width="40px" src={java_svg}></img>
+              </div>
+              <div title="C#">
+                <img alt="C#" draggable="false" width="50px" src={cSharp_svg} style={{ marginTop: '10px' }}></img>
               </div>
               <div title="git">
-                <img alt="git" draggable="false" width="50px" src={git_svg}></img>
-              </div>
-              <div title="GitHub">
-                <img alt="github" draggable="false" width="40px" src={gitHub_svg}></img>
+                <img alt="git" draggable="false" width="80px" src={git_svg} style={{ marginTop: '14px' }}></img>
               </div>
               <div title="Photoshop">
-                <img alt="photoshop" draggable="false" width="38px" src={photoshop_svg}></img>
+                <img
+                  alt="photoshop"
+                  draggable="false"
+                  width="50px"
+                  src={photoshop_svg}
+                  style={{ marginTop: '14px' }}
+                ></img>
               </div>
               <div title="Figma">
-                <img alt="Figma" draggable="false" width="26px" src={figma_svg}></img>
+                <img alt="Figma" draggable="false" width="32px" src={figma_svg} style={{ marginTop: '12px' }}></img>
               </div>
             </div>
           </div>

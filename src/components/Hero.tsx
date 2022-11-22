@@ -16,7 +16,7 @@ function Hero() {
           Evan O'Rourke
         </div>
         <div id={subTitleId} className="hero-subtitle">
-          &lt;Web Developer /&gt;
+          &lt;Software Engineer /&gt;
         </div>
       </div>
 

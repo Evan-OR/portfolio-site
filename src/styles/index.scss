@@ -170,6 +170,7 @@ code {
           margin-top: 5px;
           display: flex;
           flex-wrap: wrap;
+          font-size: 50px;
           // justify-content: space-evenly;
         }
         .skills-icons > * {
@@ -277,6 +278,13 @@ code {
 
   .hero-wrapper .shape-divider svg {
     height: 24px;
+  }
+
+  .about-wrapper .about-section .about-section-content .content-title {
+    text-align: center;
+  }
+  .about-wrapper .about-section .about-section-content .skills-wrapper .skills-icons {
+    justify-content: space-evenly;
   }
 }
 @media (max-width: 300px) {
