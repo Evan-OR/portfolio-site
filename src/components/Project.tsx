@@ -117,6 +117,45 @@ function Project() {
 
       <div data-aos="fade-up" className="project-wrapper">
         <div className="project-text">
+          <div className="project-title">Sorting Algorithms Visualization</div>
+          <div className="project-desc">
+            <div className="project-paragraph">
+              Sorting Algorithms Visualization Website created with{' '}
+              <span className="highlight-text">Vanilla Javascript</span>. User can pick between different sorting
+              algorithms along with sort speed and array size.
+            </div>
+            <div className="project-paragraph">
+              Sorting Algorithms: <span className="highlight-text">Bubble Sort</span>,{' '}
+              <span className="highlight-text">Insertion Sort</span>,{' '}
+              <span className="highlight-text">Selection Sort</span>.
+            </div>
+          </div>
+
+          {/* ICONS */}
+          <div className="project-tech-icons">
+            <div title="HTML" className="html-color">
+              <i className="fab fa-html5"></i>
+            </div>
+            <div title="CSS" className="css-color">
+              <i className="fab fa-css3-alt"></i>
+            </div>
+            <div title="Javascript" className="javscript-color">
+              <i className="fab fa-js-square"></i>
+            </div>
+          </div>
+          <ProjectButtons
+            githubLink="https://github.com/Evan-OR/sortingAlgorithms"
+            projectLink="https://evan-or.github.io/sortingAlgorithms/"
+          />
+        </div>
+
+        <div className="project-image">
+          <img alt="weather" draggable="false" src={sortingImg}></img>
+        </div>
+      </div>
+
+      <div data-aos="fade-up" className="project-wrapper">
+        <div className="project-text">
           <div className="project-title">My Portfolio Site</div>
           <div className="project-desc">
             <div className="project-paragraph">
@@ -154,45 +193,6 @@ function Project() {
 
         <div className="project-image">
           <img alt="weather" draggable="false" src={portfolioImg}></img>
-        </div>
-      </div>
-
-      <div data-aos="fade-up" className="project-wrapper">
-        <div className="project-text">
-          <div className="project-title">Sorting Algorithms Visualization</div>
-          <div className="project-desc">
-            <div className="project-paragraph">
-              Sorting Algorithms Visualization Website created with{' '}
-              <span className="highlight-text">Vanilla Javascript</span>. User can pick between different sorting
-              algorithms along with sort speed and array size.
-            </div>
-            <div className="project-paragraph">
-              Sorting Algorithms: <span className="highlight-text">Bubble Sort</span>,{' '}
-              <span className="highlight-text">Insertion Sort</span>,{' '}
-              <span className="highlight-text">Selection Sort</span>.
-            </div>
-          </div>
-
-          {/* ICONS */}
-          <div className="project-tech-icons">
-            <div title="HTML" className="html-color">
-              <i className="fab fa-html5"></i>
-            </div>
-            <div title="CSS" className="css-color">
-              <i className="fab fa-css3-alt"></i>
-            </div>
-            <div title="Javascript" className="javscript-color">
-              <i className="fab fa-js-square"></i>
-            </div>
-          </div>
-          <ProjectButtons
-            githubLink="https://github.com/Evan-OR/sortingAlgorithms"
-            projectLink="https://evan-or.github.io/sortingAlgorithms/"
-          />
-        </div>
-
-        <div className="project-image">
-          <img alt="weather" draggable="false" src={sortingImg}></img>
         </div>
       </div>
     </>
