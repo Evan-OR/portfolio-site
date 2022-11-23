@@ -5,7 +5,7 @@ function NavBar() {
     <div id="navbar" className="nav-wrapper">
       <div className="nav-option">
         <a className="nav-link" href="#About">
-          About
+          About Me
         </a>
       </div>
       <div className="nav-option">
