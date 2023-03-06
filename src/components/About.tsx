@@ -69,7 +69,7 @@ function About() {
             {/* <div className="skills-text">Node.js, Express.js</div> */}
 
             <div className="skills-icons">
-              <div title="Express.js">
+              <div title="MySQL">
                 <img alt="My SQL" draggable="false" width="110px" src={mysql_svg}></img>
               </div>
               <div title="Node.js">

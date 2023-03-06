@@ -1,7 +1,13 @@
 import React, { useEffect } from 'react';
 import chartjs_Svg from '../svg/chartjs-icon.svg';
+import mysql_svg from '../svg/mysql.svg';
+import node_svg from '../svg/nodejs-icon.svg';
+import express_svg from '../svg/express-icon.svg';
+import azure_svg from '../svg/azure.svg';
+
 import typescript_svg from '../svg/typescript-icon.svg';
 import weatherImg from '../img/Responsive_Weather.png';
+import drinksApp from '../img/teamProject.png';
 import todoImg from '../img/Responsive_taskmanager.png';
 import portfolioImg from '../img/Responsive_portfolio.png';
 import sortingImg from '../img/sortingImg.png';
@@ -16,6 +22,89 @@ function Project() {
 
   return (
     <>
+      <div data-aos="fade-up" className="project-wrapper">
+        <div className="project-text">
+          <div className="project-title">Food and Drink Recommendation App</div>
+
+          <div className="project-desc">
+            <div className="project-paragraph">
+              This is a team project I am currently working on in college. It recommends new foods and drinks fore users
+              to try out based on their likes.
+            </div>
+
+            <div className="project-paragraph">
+              The frontend was made with <span className="highlight-text">React.js</span> and
+              <span className="highlight-text"> TypeScript</span>, styled with{' '}
+              <span className="highlight-text"> SASS </span>.
+            </div>
+          </div>
+
+          {/* ICONS */}
+          <div className="project-tech-icons">
+            <div title="React.js" className="react-color">
+              <i className="fab fa-react"></i>
+            </div>
+            <div
+              style={{
+                display: 'flex',
+                alignItems: 'center',
+                marginTop: '8px',
+                borderRadius: '8px',
+                overflow: 'hidden',
+              }}
+              title="TypeScript"
+            >
+              <img alt="TypeScript Icon" draggable="false" width="38px" src={typescript_svg}></img>
+            </div>
+            <div title="HTML" className="html-color">
+              <i className="fab fa-html5"></i>
+            </div>
+            <div title="CSS" className="css-color">
+              <i className="fab fa-css3-alt"></i>
+            </div>
+            <div title="SASS" className="sass-color">
+              <i className="fab fa-sass"></i>
+            </div>
+          </div>
+          <div className="project-desc">
+            <div className="project-paragraph">
+              We used <span className="highlight-text">Node.js</span> and
+              <span className="highlight-text"> express.js</span> to create out own{' '}
+              <span className="highlight-text"> REST API</span> and we hosted a{' '}
+              <span className="highlight-text">MySQL</span> database using{' '}
+              <span className="highlight-text">Microsoft Azure</span>.
+            </div>
+          </div>
+
+          {/* ICONS */}
+          <div className="project-tech-icons">
+            <div title="MySQL">
+              <img alt="My SQL" draggable="false" width="110px" src={mysql_svg}></img>
+            </div>
+            <div title="Node.js">
+              <img style={{ marginTop: '10px' }} alt="express.js" draggable="false" width="70px" src={node_svg}></img>
+            </div>
+            <div title="Express.js">
+              <img
+                style={{ marginTop: '10px' }}
+                alt="express.js"
+                draggable="false"
+                width="80px"
+                src={express_svg}
+              ></img>
+            </div>
+            <div title="Azure">
+              <img style={{ marginTop: '5px' }} alt="express.js" draggable="false" width="40px" src={azure_svg}></img>
+            </div>
+          </div>
+
+          <ProjectButtons githubLink="https://github.com/Evan-OR/weather-app" onlyDisplayCode={true} />
+        </div>
+
+        <div className="project-image">
+          <img style={{ width: '100%' }} alt="weather" draggable="false" src={drinksApp}></img>
+        </div>
+      </div>
       <div data-aos="fade-up" className="project-wrapper">
         <div className="project-text">
           <div className="project-title">Weather App</div>
